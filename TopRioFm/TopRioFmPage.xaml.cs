@@ -1,4 +1,8 @@
-﻿using Xamarin.Forms;
+﻿using Furacao2000;
+using Plugin.MediaManager;
+using Plugin.MediaManager.Abstractions;
+using Xamarin.Forms;
+
 
 namespace TopRioFm
 {
@@ -6,7 +10,8 @@ namespace TopRioFm
     {
         public TopRioFmPage()
         {
-            InitializeComponent();
+			InitializeComponent();
+			BindingContext = new MainViewModel();
         }
     }
 }

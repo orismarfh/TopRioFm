@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Plugin.MediaManager.Forms;
+using Xamarin.Forms;
 
 namespace TopRioFm
 {
@@ -6,9 +7,10 @@ namespace TopRioFm
     {
         public App()
         {
-            InitializeComponent();
+			var workaround = typeof(VideoView);
+			InitializeComponent();
 
-            MainPage = new TopRioFmPage();
+			MainPage = new TopRioFmPage();
         }
 
         protected override void OnStart()

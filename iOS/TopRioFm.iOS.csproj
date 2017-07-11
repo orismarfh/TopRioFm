@@ -97,6 +97,12 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.MediaManager.Abstractions">
+      <HintPath>..\packages\Plugin.MediaManager.0.4.0\lib\Xamarin.iOS10\Plugin.MediaManager.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager">
+      <HintPath>..\packages\Plugin.MediaManager.0.4.0\lib\Xamarin.iOS10\Plugin.MediaManager.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TopRioFm\TopRioFm.csproj">
@@ -122,6 +128,14 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\f1.jpg" />
+    <BundleResource Include="Resources\pause.png" />
+    <BundleResource Include="Resources\play.png" />
+    <BundleResource Include="Resources\instagram21.png" />
+    <BundleResource Include="Resources\facebook3.png" />
+    <BundleResource Include="Resources\whatsapp2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

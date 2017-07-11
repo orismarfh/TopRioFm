@@ -9,8 +9,6 @@ namespace Furacao2000
 {
 	public class MainViewModel : BaseViewModel
 	{
-		
-
 		private IPlaybackController PlaybackController => CrossMediaManager.Current.PlaybackController;
 
 		public Command PauseCommand { get; }
@@ -24,7 +22,19 @@ namespace Furacao2000
 			PlayCommand = new Command (ExecutePlayCommand);
 			LinkFaceCommand = new Command (ExecuteLinkFaceCommand);
 			LinkInstaCommand = new Command (ExecuteLinkInstaCommand);
-			CrossMediaManager.Current.Play ("http://streaming32.hstbr.net:8334/live");
+            System.Diagnostics.Debug.WriteLine("1");
+            try
+            {
+                Task.Factory.StartNew(async() =>
+                {
+                    await CrossMediaManager.Current.Play("http://streaming32.hstbr.net:8334/live");
+                });
+            }
+            catch(Exception e)
+            {
+                var a = e;
+            }
+			System.Diagnostics.Debug.WriteLine("2");
 		}
 
 		void ExecuteLinkInstaCommand (object obj)
@@ -43,7 +53,7 @@ namespace Furacao2000
 			PlaybackController.Play ();
 		}
 
-		void ExecutePauseCommand ()
+		void ExecutePauseCommand (object obj)
 		{
 			PlaybackController.Pause ();
 		}
