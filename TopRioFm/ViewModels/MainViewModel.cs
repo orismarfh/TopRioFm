@@ -15,8 +15,8 @@ namespace Furacao2000
 		public Command PlayCommand { get; }
 		public Command LinkFaceCommand { get; }
 		public Command LinkInstaCommand { get; }
-	//	public Command GoToPlay { get; }
-      //  public Command GoToPause { get; }
+		public Command LinkTwitterCommand { get; }
+
 
 		public MainViewModel ()
 		{
@@ -24,8 +24,10 @@ namespace Furacao2000
 			PlayCommand = new Command (ExecutePlayCommand);
 			LinkFaceCommand = new Command (ExecuteLinkFaceCommand);
 			LinkInstaCommand = new Command (ExecuteLinkInstaCommand);
-        //    GoToPlay = new Command(GoToPlay);
-          //  GoToPause = new Command(GoToPause);
+            LinkTwitterCommand = new Command(ExecuteLinkTwitterCommand);
+            GoToPlay = false;
+            GoToPause = true;
+  
         
 
        
@@ -56,16 +58,27 @@ namespace Furacao2000
 		void ExecuteLinkFaceCommand (object obj)
 		{
 			Device.OpenUri (new Uri ("https://www.facebook.com/toprio971fm/"));
+
+		}
+		void ExecuteLinkTwitterCommand(object obj)
+		{
+			Device.OpenUri(new Uri("https://www.twitter.com/furacao2000/"));
 		}
 
-		void ExecutePlayCommand (object obj)
-		{
-			PlaybackController.Play ();
-		}
+
+		void ExecutePlayCommand(object obj)
+        {
+            GoToPause = true;
+            GoToPlay = false;
+            PlaybackController.Play();
+        }  
 
 		void ExecutePauseCommand (object obj)
 		{
+			GoToPlay = true;
+            GoToPause = false;
 			PlaybackController.Pause ();
+
 		}
 
 
