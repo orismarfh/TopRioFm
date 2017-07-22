@@ -113,6 +113,27 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\29x29png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87X87png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80X80png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120x120png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\57x57png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\114x114png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58x58png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180x180png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\50x50png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\100x100png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\72x72png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76x76png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\144x144png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152x152png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167x167png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\48x48png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\55x55png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\88x88png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\172x172png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\196x196png.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40X40png.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -136,6 +157,8 @@
     <BundleResource Include="Resources\instagram21.png" />
     <BundleResource Include="Resources\facebook3.png" />
     <BundleResource Include="Resources\whatsapp2.png" />
+    <BundleResource Include="Resources\LOGO 512X512 Px.png" />
+    <BundleResource Include="Resources\twitter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
